@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Game</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #000;
+        }
+       
+        .top-bar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+        .top-bar .leaderboard{
+            background-color: #fff;
+            color: #000;
+            padding: 5px;
+            border-radius: 5px;
+            
+        }
+        .top-bar .leaderboard a{
+            text-decoration: none;
+            color: white;
+
+        }
+        .gameArea .startScreen{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 90vh;
+            background-color: #000;
+            color: #fff;
+        }
+        .hide{
+            display: none !important;
+        }
+        .car,
+        .enemy {
+            position: absolute;
+            bottom: 100px;
+            margin: auto;
+            width: 50px;
+            height: 100px;
+            background-color: white;
+            line-height: 38px;
+            font-size: 1.7em;
+            text-align: center;
+            vertical-align: middle;
+            background-image: url(car2.png);
+            background-size: cover;
+            border-radius: 20%;
+        }
+        .line {
+            position: absolute;
+            height: 100px;
+            width: 10px;
+            margin-left: 195px;
+            background-color: white;
+        }
+        .score {
+            background-color: black;
+            height: 70px;
+            text-align: center;
+            color: white;
+            
+        }
+        .gameScreen{
+            background-color: #000;
+            height: 90vh;
+            position:relative; 
+            margin: auto;
+            width: 30vw;
+            color: aliceblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- top bar -->
+    <div class="top-bar">
+         <div class="user-name">Name</div>
+        <div class="score-section">
+            Score: <span class="score">0</span>
+        </div>
+        <div class="lives">Highest Score: 2478</div>
+        <div class="leaderboard">
+            <a href="#">LeaderBoard</a>
+        </div>
+    </div>
+
+    <!-- Game area -->
+    <div class="gameArea">
+          <div class="startScreen">
+             <h1>Welcome to Game Screen</h1>
+             <p> Click anywhere to start the game</p>
+          </div>
+          <div class="gameScreen hide"> 
+            game areac
+          </div>
+    </div>
+
+    <script src="./app.js">
+          
+    </script>
+        
+    
+</body>
+</html>
